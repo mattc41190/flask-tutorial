@@ -30,6 +30,12 @@ __*This is not a real application. It is a tutorial application that demonstrate
 
 - https://docs.python.org/3/library/functools.html
 
+## To Dos
+
+- Read: https://packaging.python.org/tutorials/packaging-projects/
+- Read: https://docs.python.org/3/library/functools.html
+- Read Docs: PyTest
+
 ## Questions and Mysteries
 
 - `__init__`, modules, and file paths in general in Python are tough for me to understand at the moment.
