@@ -48,7 +48,7 @@ def create():
         error = None
 
         if not title:
-            error = 'title is required'
+            error = 'Title is required.'
         
         if error is not None:
             flash(error)
@@ -65,6 +65,7 @@ def create():
     return render_template('blog/create.html')
 
 @bp.route('/<int:id>/update', methods=['GET', 'POST'])
+@login_required
 def update(id):
     post = get_post(id)
 
@@ -101,3 +102,13 @@ def delete(id):
     db.execute(sql_stmt, (id,))
     db.commit()
     return redirect(url_for('blog.index'))
+
+def test_delete_removes_intended_post(app, client, auth):
+    auth.login()
+    resp = client.post('/1/delete')
+    assert resp.headers['Location'] == 'http://localhost/'
+
+    with app.app_context():
+        db = get_db()
+        post = db.execute('SELECT * FROM post WHERE id =  1').fetchone()
+        assert post is None
