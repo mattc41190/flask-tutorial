@@ -1,6 +1,8 @@
 # Flask Tutorial - Flaskr
 
-__*This is not a real application. It is a tutorial application that demonstrates how you can make a simple flask application.__
+__This is not a real application. It is a tutorial application that demonstrates how you can make a simple flask application.__
+
+Source Material: https://flask.palletsprojects.com/en/1.1.x/tutorial/
 
 ## What is this?
 
@@ -65,3 +67,7 @@ See: https://flask.palletsprojects.com/en/1.1.x/tutorial/deploy/#deploy-to-produ
 ## Questions and Mysteries
 
 - `__init__`, modules, and file paths in general in Python are tough for me to understand at the moment.
+
+## What's Next?
+
+- https://flask.palletsprojects.com/en/1.1.x/tutorial/next/
