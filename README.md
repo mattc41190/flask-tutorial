@@ -25,7 +25,7 @@ To change your life!
 
 - `git clone <repo-addr>`
 
-### Dev IT 
+### Dev It 
 
 - Needs `venv` & `python3`
 
